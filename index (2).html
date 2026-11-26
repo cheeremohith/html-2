@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chai and Chapter Cafe</title>
+<style>
+/* Basic reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; background-color: #f6efe6; color: #333; }
+
+/* Navigation bar */
+.navbar { background-color: #5a3825; color: white; padding: 15px; text-align: center; }
+.navbar a { color: white; text-decoration: none; margin: 0 10px; }
+.navbar a:hover { color: #f0b04a; }
+
+/* Hero section */
+.hero { background-color: #7a4b2e; color: white; text-align: center; padding: 80px 20px; }
+.hero h1 { font-size: 40px; margin-bottom: 15px; }
+.button { display: inline-block; background-color: #f0b04a; color: black; padding: 10px 25px; text-decoration: none; border-radius: 5px; margin-top: 15px; }
+
+/* Sections */
+.section { padding: 40px 20px; text-align: center; }
+.section h2 { color: #5a3825; margin-bottom: 20px; }
+.dark { background-color: #2f5d50; color: white; }
+.dark h2 { color: white; }
+
+/* Cards (flexbox makes them sit side by side) */
+.cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.card { background-color: white; color: #333; width: 220px; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px gray; }
+.card .icon { font-size: 40px; }
+.price { color: #2f5d50; font-weight: bold; }
+
+.footer { background-color: #2b1d14; color: white; text-align: center; padding: 15px; }
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 28px; }
+  .card { width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <h2>Chai and Chapter Cafe</h2>
+  <a href="#menu">Menu</a>
+  <a href="#specials">Specials</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#visit">Visit Us</a>
+</div>
+
+<div class="hero">
+  <h1>Welcome to Chai and Chapter</h1>
+  <p>Fresh coffee, tasty snacks and a cozy place to relax.</p>
+  <a class="button" href="#menu">See Menu</a>
+</div>
+
+<div class="section" id="menu">
+  <h2>Our Menu</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">☕</div><h3>Filter Coffee</h3><p class="price">Rs. 60</p></div>
+    <div class="card"><div class="icon">🍵</div><h3>Masala Chai</h3><p class="price">Rs. 40</p></div>
+    <div class="card"><div class="icon">🥐</div><h3>Croissant</h3><p class="price">Rs. 90</p></div>
+    <div class="card"><div class="icon">🍰</div><h3>Chocolate Cake</h3><p class="price">Rs. 120</p></div>
+  </div>
+</div>
+
+<div class="section dark" id="specials">
+  <h2>Today's Special Items</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">🧊</div><h3>Cold Brew</h3><p class="price">Rs. 150</p></div>
+    <div class="card"><div class="icon">🥪</div><h3>Paneer Sandwich</h3><p class="price">Rs. 130</p></div>
+  </div>
+</div>
+
+<div class="section" id="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="cards">
+    <div class="card"><p>"Best coffee in town!"</p><p><b>- Anitha</b></p></div>
+    <div class="card"><p>"Very peaceful place to study."</p><p><b>- Kiran</b></p></div>
+    <div class="card"><p>"Loved the chocolate cake."</p><p><b>- Sneha</b></p></div>
+  </div>
+</div>
+
+<div class="section dark" id="visit">
+  <h2>Opening Hours and Location</h2>
+  <p>Monday to Friday: 8:00 AM - 10:00 PM</p>
+  <p>Saturday and Sunday: 9:00 AM - 11:00 PM</p>
+  <p>Address: 12 Garden Road, Vijayawada, Andhra Pradesh</p>
+  <p>Phone: +91 98765 43210</p>
+</div>
+
+<div class="footer"><p>&copy; 2026 Chai and Chapter Cafe</p></div>
+
+</body>
+</html>
